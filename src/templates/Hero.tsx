@@ -1,10 +1,25 @@
+'use client';
+
 import { GitHubLogoIcon, TwitterLogoIcon } from '@radix-ui/react-icons';
+import * as Sentry from '@sentry/nextjs';
 import { useTranslations } from 'next-intl';
 
 import { badgeVariants } from '@/components/ui/badgeVariants';
+import { Button } from '@/components/ui/button';
 import { buttonVariants } from '@/components/ui/buttonVariants';
 import { CenteredHero } from '@/features/landing/CenteredHero';
 import { Section } from '@/features/landing/Section';
+
+const ErrorButton = () => (
+  <Button
+    onClick={() => {
+      Sentry.captureException('Test error for Sentry');
+    }}
+    className="bg-red-500 text-white hover:bg-red-600"
+  >
+    Click me to send error to Sentry
+  </Button>
+);
 
 export const Hero = () => {
   const t = useTranslations('Hero');
@@ -48,6 +63,7 @@ export const Hero = () => {
               <GitHubLogoIcon className="mr-2 size-5" />
               {t('secondary_button')}
             </a>
+            <ErrorButton />
           </>
         )}
       />
