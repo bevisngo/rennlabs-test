@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/bevisngo/rennlabs-test/compare/v1.0.0...v1.0.1) (2025-02-24)
+
+
+### Bug Fixes
+
+* upgrade version of upload-artifact from v3 to v4 ([970f3e0](https://github.com/bevisngo/rennlabs-test/commit/970f3e0f758ffb4dae988cf1d16f36ba13e694ff))
+
 # 1.0.0 (2025-02-24)
 
 
