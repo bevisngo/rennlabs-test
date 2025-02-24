@@ -13,7 +13,12 @@ import { Section } from '@/features/landing/Section';
 const ErrorButton = () => (
   <Button
     onClick={() => {
-      Sentry.captureException('Test error for Sentry');
+      try {
+        throw new Error('Test error for Sentry');
+      } catch (error) {
+        console.error(error);
+        Sentry.captureException(error);
+      }
     }}
     className="bg-red-500 text-white hover:bg-red-600"
   >
