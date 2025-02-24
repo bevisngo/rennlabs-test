@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/bevisngo/rennlabs-test/compare/v1.0.2...v1.1.0) (2025-02-24)
+
+
+### Features
+
+* integrate with sentry ([9ddf423](https://github.com/bevisngo/rennlabs-test/commit/9ddf423da52946b4dc2b010fcc059e838e475cde))
+
 ## [1.0.2](https://github.com/bevisngo/rennlabs-test/compare/v1.0.1...v1.0.2) (2025-02-24)
 
 
