@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/bevisngo/rennlabs-test/compare/v1.1.0...v1.2.0) (2025-02-24)
+
+
+### Features
+
+* setup docker ([1c6f2dd](https://github.com/bevisngo/rennlabs-test/commit/1c6f2ddb1d9ed2ac46adf393d9bdf57b224f2f35))
+
 # [1.1.0](https://github.com/bevisngo/rennlabs-test/compare/v1.0.2...v1.1.0) (2025-02-24)
 
 
